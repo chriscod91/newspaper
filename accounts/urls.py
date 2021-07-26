@@ -12,7 +12,7 @@ urlpatterns = [
 
 #<li><a class="dropdown-item" href="{% url 'article_new' %}">Create 
 
-#from django.contrib.auth.mixins import LoginRequiredMixin
+
 #python3 -c "import secrets; print(secrets.token_urlsafe())"
 #145:28
 #'whitenoise.middleware.WhiteNoiseMiddleware',

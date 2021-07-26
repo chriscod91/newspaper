@@ -46,7 +46,9 @@ INSTALLED_APPS = [
     'crispy_forms',
     #local
     'accounts',
+    'articles',
     'pages',
+ 
 ]
 
 MIDDLEWARE = [
@@ -115,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Los_Angeles'
 
 USE_I18N = True
 
@@ -147,3 +149,4 @@ EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey'
 EMAIL_HOST_PASSWORD = ('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')
 EMAIL_PORT = 587
+EMAIL_USE_TLS = True

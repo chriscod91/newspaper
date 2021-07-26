@@ -3,15 +3,12 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-    {% if user.is_authenticated %}
-        Hi {{ user.username }}!
-        you are {{ user.age }} years old.
-        <p>
-            <a href="{% url 'logout' %}">Log out</a>
+    <br />
+    <div class="jumbotron">
+        <h1 class="display-4">Newspaper</h1>
+        <p class="dispplay-4">A newspaper website built with django.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}">View all Articles</a>
         </p>
-    {% else %}
-        <P>you are not logged in.</P>
-        <a href="{% url 'login' %}">Log in</a> |
-        <a href="{% url 'signup' %}">Sign Up</a>
-    {% endif %}
+    </div>
 {% endblock content %}
