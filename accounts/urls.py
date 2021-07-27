@@ -5,9 +5,7 @@ from .views import SignUpView
 
 urlpatterns = [
     path('signup/', SignUpView.as_view(), name='signup'),
-    path('accounts', include('django.contrib.auth.urls')),
-    path('accounts', include('accounts.urls')),
-    path('', include('pages.urls')),
+ 
 ]
 
 #<li><a class="dropdown-item" href="{% url 'article_new' %}">Create 
